@@ -159,7 +159,7 @@ small {
 
 .strong { font-weight: 600; }
 #pageloader {
-    background-color: #E74C3C;
+    background-color: #000000;
     height: 100%;
     position: fixed;
     top: 0;
