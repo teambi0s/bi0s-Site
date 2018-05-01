@@ -3248,6 +3248,7 @@ canvas {
     -webkit-box-shadow: 0 1px 1px #ddd;
        -moz-box-shadow: 0 1px 1px #ddd;
             box-shadow: 0 1px 1px #ddd;
+                       
 }
 .blog-one:hover {
     -webkit-box-shadow: 0 0 40px #ddd;
