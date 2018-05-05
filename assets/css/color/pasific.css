@@ -42,7 +42,7 @@ input[type=checkbox]:checked + label:before,
 .button-pasific.hover-rectangle-out:before,
 .button-pasific.hover-shutter-out-horizontal:before,
 .button-pasific.hover-shutter-out-vertical:before {
-    background-color: #ff4530 !important;
+    background-color: #000000 !important;
 }
 
 /*  --------------------------------------------------------

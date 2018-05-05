@@ -89,11 +89,11 @@ COLOR SETTING
 .bg-red     { background-color: #fd3635 !important; }
 .bg-pink    { background-color: #fd40b3 !important; }
 .bg-orange  { background-color: #ff8b34 !important; }
-.bg-purple  { background-color: #a85ad4 !important; }
-.bg-blue    { background-color: #3dace1 !important; }
-.bg-cyan	{ background-color: #1abc9c !important; }
-.bg-green	{ background-color: #b2cc71 !important; }
-.bg-yellow	{ background-color: #ffc501 !important; }
+.bg-purple  { background-color: #000000 !important; }
+.bg-blue    { background-color: #000000 !important; }
+.bg-cyan	{ background-color: #000000 !important; }
+.bg-green	{ background-color: #000000 !important; }
+.bg-yellow	{ background-color: #000000 !important; }
 
 .bg-dark 	{ background-color: #5f6467 !important; }
 .bg-dark2 	{ background-color: #323a45 !important; }
