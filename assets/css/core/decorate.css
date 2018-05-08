@@ -130,6 +130,12 @@ h3 {
     background: #7cc576;
     padding: 25px 0;
     filter: alpha(opacity=60);
+
+}
+.c-logo1-part {
+    background: #2BC0E4;
+    padding: 25px 0;
+    filter: alpha(opacity=60);
 }
 #client img:hover {
     -webkit-filter: opacity(50%);
