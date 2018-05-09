@@ -4427,7 +4427,6 @@ ul.pagination.pagination-pasific li.active a {
 -------------------------------------------------------- */
 .social.social-one {
     text-align: center;
-    margin-top: 20px;
 }
 
 .social.social-one a {
@@ -4446,8 +4445,6 @@ ul.pagination.pagination-pasific li.active a {
     padding: 5px 8px;
     text-align: center;
     border: 1px solid #ddd;
-    float: left;
-    display: block;
     margin-right: 5px;
     -webkit-border-radius: 2px;
        -moz-border-radius: 2px;
