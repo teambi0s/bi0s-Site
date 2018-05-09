@@ -98,8 +98,9 @@ COLOR SETTING
 .bg-dark 	{ background-color: #5f6467 !important; }
 .bg-dark2 	{ background-color: #323a45 !important; }
 .bg-dark3   { background-color: #141c27 !important; }
+.bg-dark31   { background-color: #777777 !important; }
 .bg-dark4   { background-color: #0b0f16 !important; }
-
+.bg-gray0 	{ background-color: #777777 !important; }
 .bg-gray 	{ background-color: #007a96 !important; }
 .bg-gray2 	{ background-color: #e0e0e0 !important; }
 .bg-light   { background-color: #ffffff !important; }

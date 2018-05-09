@@ -44,6 +44,10 @@ input[type=checkbox]:checked + label:before,
 .button-pasific.hover-shutter-out-vertical:before {
     background-color: #000000 !important;
 }
+.button.button-pasific1 {
+    background-color: #ff512f !important;
+}
+
 
 /*  --------------------------------------------------------
 BORDER COLOR
