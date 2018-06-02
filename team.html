@@ -90,7 +90,30 @@
                 </div>
             </div>
         </nav>
-			
+<!-- ================================= -->
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".button").click(function(){
+            var value = $(this).attr("data-filter");
+            if (value == "all")
+            {
+                $(".filter").show("1000");
+            }
+            else
+            {
+                $(".filter").not("."+value).hide("1000");
+                $(".filter").filter("."+value).show("1000");
+            }
+        })
+    })
+
+</script>
+</head>
+
+<!-- ================================== -->
 			
  <!-- Team Area
         ===================================== -->
@@ -110,30 +133,28 @@
                     <!--- Portfolio filter buttons
         ===================================== -->
         <section><!--main-section-start-->
-	<div>
-        <div>
+        <div id="containr">
 	<center>
         
-        	<button><a data-filter="*" class="current">Team bi0s</a></button><br><br>
-        	<button><a data-filter=".web,.binary,.reverse,.forensics,.android,.crypto">Current Team</button></a>&nbsp;
-        	<button><a data-filter=".alumini" class=".alumini">Alumini</a></button>&nbsp;
-      		<button><a data-filter=".web">Web Security</a></button><br><br>&nbsp;
-        	<button><a data-filter=".binary">Binary Exploitation</a></button>&nbsp;
-        	<button><a data-filter=".android">Android Security</a></button>&nbsp;
-		<button><a data-filter=".reverse">Reverse Engineering</a></button>&nbsp;
-		<button><a data-filter=".crypto">Cryptography</a></button>&nbsp;
-		<button><a data-filter=".forensics">Forensics</a></button>&nbsp;
-		<button><a data-filter=".hardware">Hardware Security</a></button>&nbsp;
+        	<button class="button active" data-filter="all">Team bi0s</a></button><br><br>
+        	<button class="button" data-filter="current">Current Team</button></a>&nbsp;
+        	<button class="button" data-filter="alumini">Alumini</a></button>&nbsp;
+      		<button class="button" data-filter="web">Web Security</a></button><br><br>&nbsp;
+        	<button class="button" data-filter="binary">Binary Exploitation</a></button>&nbsp;
+        	<button class="button" data-filter="android">Android Security</a></button>&nbsp;
+		    <button class="button" data-filter="reverse">Reverse Engineering</a></button>&nbsp;
+		    <button class="button" data-filter="crypto">CryptoGraphy</a></button>&nbsp;
+		    <button class="button" data-filter="forensics">Forensics</a></button>&nbsp;
+		    <button class="button" data-filter="hardware">Hardware Security</a></button>&nbsp;
         
 	</center>        
-	</div>
-
 	</div>
         
 
                     <!-- team member one start -->
-                    <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 hover-wobble-vertical mt30 alumini">
-                        <div class="team team-four bg-pasific">
+					<div class="box filter alumini">
+                    <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
+                        <div class="team team-four bg-pasific ">
                             <h5>ANIRUDH ANAND<small class="color-light alpha7">Web Application Security</small></h5>
                             <img src="assets/img/team/anirud.jpg" alt="" class="img-responsive">
                             <div class="team-social">
@@ -144,10 +165,12 @@
                             </div>
                         </div>
                     </div>
+					</div>
                     <!-- team member one end -->
 
 
                     <!-- team member two start -->
+					<div class="box filter alumini">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30 alumini">
                             <div class="team team-four bg-blue">
                                 <h5>ARJUN TU<small class="color-light alpha7">Reverse Engineering
@@ -161,9 +184,11 @@
                                 </div>
                             </div>
                         </div>
+						</div>
                     <!-- team member two end -->
 
                     <!-- team member three start -->
+					<div class="box filter alumini">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30 alumini">        
                             <div class="team team-four bg-cyan">
                                 <h5>RAKESH PARCHURI<small class="color-light alpha7">Binary Exploitation
@@ -178,9 +203,11 @@
                                 </div>
                             </div>
                         </div>
+						</div>
                     <!-- team member three end -->
 
                     <!-- team member four start -->
+					<div class="box filter web">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30 web">
                             <div class="team team-four bg-green">
                                 <h5>GOKUL KRISHNA<small class="color-light alpha7">Client Side Security</small></h5>
@@ -193,9 +220,11 @@
                                 </div>
                             </div>
                         </div>
+                        </div>	
                     <!-- team member four end -->
 
                     <!-- team member five start -->
+                    <div class="box filter android">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-purple">
                             <h5>ABHISHEK J M<small class="color-light alpha7">Android Security</small></h5>
@@ -208,13 +237,14 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member five end -->
 
 
-                </div><!-- row end -->
-                <div class="row">
+                
 
                     <!-- team member one start -->
+                    <div class="box filter binary">
                     <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-pasific">
                             <h5>JAYAKRISHNA MENON<small class="color-light alpha7">Heap Based exploitation</small></h5>
@@ -227,10 +257,12 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member one end -->
 
 
                     <!-- team member two start -->
+                    <div class="box filter web">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                             <div class="team team-four bg-cyan">
                                 <h5>HEERAJ<small class="color-light alpha7">Sever Side Security</small></h5>
@@ -243,9 +275,11 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
                     <!-- team member two end -->
 
                     <!-- team member three start -->
+                    <div class="box filter forensics">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-green">
                             <h5>SHIVKRISHNA A<small class="color-light alpha7">Memory Forensics
@@ -260,9 +294,11 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member three end -->
 
                     <!-- team member four start -->
+                    <div class="box filter web">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-blue">
                             <h5>AKHIL MAHENDRA<small class="color-light alpha7">Server Side Security</small></h5>
@@ -275,9 +311,11 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member four end -->
 
                     <!-- team member five start -->
+                    <div class="box filter web">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-purple">
                             <h5>ASWIN M GUPTHA<small class="color-light alpha7">Web Security
@@ -292,13 +330,14 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member five end -->
 
 
-                </div><!-- row end -->
-                <div class="row">
+                
 
                     <!-- team member one start -->
+                    <div class="box filter reverse">
                     <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-pasific">
                             <h5>AKSHAY AJAYAN<small class="color-light alpha7">Reverse Engineering
@@ -313,10 +352,12 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member one end -->
 
 
                     <!-- team member two start -->
+                    <div class="box filter reverse">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-cyan">
                             <h5>SIDDHARTH MURALEE<small class="color-light alpha7">Reverse Engineering
@@ -331,9 +372,11 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member two end -->
 
                     <!-- team member three start -->
+                    <div class="box filter web">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-green">
                             <h5>TARUNKANT GUPTA<small class="color-light alpha7">Web Exploitation
@@ -348,9 +391,11 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member three end -->
 
                     <!-- team member four start -->
+                    <div class="box filter binary">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-blue">
                             <h5>SIDHANT GUPTA<small class="color-light alpha7">Binary Exploitation
@@ -365,9 +410,11 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member four end -->
 
                     <!-- team member five start -->
+                    <div class="box filter binary">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-purple">
                             <h5>VIGNESH S RAO<small class="color-light alpha7">Binary Exploitation
@@ -385,10 +432,10 @@
                     <!-- team member five end -->
 
 
-                </div><!-- row end -->
-                <div class="row">
-
+                
+                
                     <!-- team member one start -->
+                    <div class="box filter reverse">
                     <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-pasific">
                             <h5>SAASTHA VASAN<small class="color-light alpha7">Reverse Engineering
@@ -403,10 +450,12 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member one end -->
 
 
                     <!-- team member two start -->
+                    <div class="box filter crypto">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-cyan">
                             <h5>ASHUTOSH AHELLEYA<small class="color-light alpha7">Cryptography
@@ -421,9 +470,11 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member two end -->
 
                     <!-- team member three start -->
+                    <div class="box filter forensics">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-green">
                             <h5>KARTHIK NAMBIAR<small class="color-light alpha7">Forensics
@@ -438,9 +489,11 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     <!-- team member three end -->
 
                     <!-- team member four start -->
+                    <div class="box filter hardware">
                     <div class="col-md-2 col-sm-4 col-xs-12 hover-wobble-vertical mt30">
                         <div class="team team-four bg-blue">
                             <h5>ASHWIN NAMBIAR<small class="color-light alpha7">Hardware Security
@@ -454,6 +507,7 @@
                                 <a href="https://github.com/Silipwn"><i class="fa fa-github"></i></a>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <!-- team member four end -->
 
@@ -481,7 +535,7 @@
 </section>
 
          <!-- footer Area
-        ===================================== -->
+        =============================		======== -->
         <div id="footer" class="footer-two pt50 bg-black">
             <div class="container-fluid pt20">
                 <div class="container">
