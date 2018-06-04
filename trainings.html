@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Trainings</title>
+<html lang="en">
+    <head>
+        <title>Trainings</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta charset="utf-8">
+        <meta name="author" content="Harry Boo">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
         <!-- Favicons -->
         <link rel="shortcut icon" href="assets/img/logo/bi0s-favicon.png">
@@ -9,20 +15,16 @@
         <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
 
+        <!-- Load Core CSS
+        =====================================-->
+        <link rel="stylesheet" href="assets/css/core/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/core/animate.min.css">
+
         <!-- Load Main CSS
         =====================================-->
         <link rel="stylesheet" href="assets/css/main/main.css">
         <link rel="stylesheet" href="assets/css/main/setting.css">
         <link rel="stylesheet" href="assets/css/main/hover.css">
-
-	<link rel="stylesheet" href="assets/css/color/pasific.css">
-        <link rel="stylesheet" href="assets/css/icon/font-awesome.css">
-        <link rel="stylesheet" href="assets/css/icon/et-line-font.css">
-
-        <!-- Load Core CSS
-        =====================================-->
-        <link rel="stylesheet" href="assets/css/core/bootstrap.css">
-        <link rel="stylesheet" href="assets/css/core/animate.min.css">
 
         <!-- Load Magnific Popup CSS
         =====================================-->
@@ -36,14 +38,60 @@
         <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.css">
         <link rel="stylesheet" href="assets/css/owl-carousel/owl.transitions.css">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/training.css">
+        <!-- Load Color CSS - Please uncomment to apply the color.
+        =====================================
+        <link rel="stylesheet" href="assets/css/color/blue.css">
+        <link rel="stylesheet" href="assets/css/color/brown.css">
+        <link rel="stylesheet" href="assets/css/color/cyan.css">
+        <link rel="stylesheet" href="assets/css/color/dark.css">
+        <link rel="stylesheet" href="assets/css/color/green.css">
+        <link rel="stylesheet" href="assets/css/color/orange.css">
+        <link rel="stylesheet" href="assets/css/color/purple.css">
+        <link rel="stylesheet" href="assets/css/color/pink.css">
+        <link rel="stylesheet" href="assets/css/color/red.css">
+        <link rel="stylesheet" href="assets/css/color/yellow.css">-->
+        <link rel="stylesheet" href="assets/css/color/pasific.css">
 
-</head>
+        <!-- Load Fontbase Icons - Please Uncomment to use linea icons
+        =====================================
+        <link rel="stylesheet" href="assets/css/icon/linea-arrows-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-basic-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-basic-elaboration-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-ecommerce-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-music-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-software-10.css">
+        <link rel="stylesheet" href="assets/css/icon/linea-weather-10.css">-->
+        <link rel="stylesheet" href="assets/css/icon/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/icon/et-line-font.css">
 
-<body class="bg-dark3">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/training.css">
 
-<!-- Navigation Area
+        <!-- Load JS
+        HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        WARNING: Respond.js doesn't work if you view the page via file://
+        =====================================-->
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body  id="page-top" data-spy="scroll" data-target=".navbar" data-offset="100" class="bg-dark3">
+
+        <!-- Page Loader
+        ===================================== -->
+        <div id="pageloader">
+            <div class="loader-item">
+                <img src="assets/img/other/puff.svg" alt="page loader">
+            </div>
+        </div>
+
+        <a href="#page-top" class="go-to-top">
+            <i class="fa fa-long-arrow-up"></i>
+        </a>
+
+        <!-- Navigation Area
         ===================================== -->
         <nav class="navbar navbar-pasific navbar-op navbar-fixed-top">
             <div class="container-fluid">
@@ -58,25 +106,29 @@
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav mr20">
                         <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a href="index.html#welcome">About</a></li>
-                        <li><a href="index.html#fields">Fields</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="index.html#portfolioGrid">Mentors</a></li>
-                        <li><a href="trainings.html">Trainings</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-			<li><a href="https://bi0s.typeform.com/to/hmQhlS">JOIN US</a></li>
+                        <li><a href="index.html#welcome" onclick="parent.location='index.html#welcome'"">About</a></li>
+                        <li><a href="index.html#fields" onclick="parent.location='index.html#fields'">Fields</a></li>
+                        <li><a href="team.html" onclick="parent.location='team.html'">Team</a></li>
+                        <li><a href="index.html#portfolioGrid" onclick="parent.location='index.html#portfolioGrid'">Mentors</a></li>
+                        <li><a href="trainings.html" onclick="parent.location='trainings.html'">Trainings</a></li>
+                        <li><a href="index.html#contact" onclick="parent.location='index.html#contact'">Contact</a></li>
+
+            <li><a href="https://bi0s.typeform.com/to/hmQhlS" onclick="window.open('https://bi0s.typeform.com/to/hmQhlS')">JOIN US</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-<br><br><br><br>
+
+
+<!--Login Modal Dialogue Box DELETED-->
+    <br><br><br><br>
 <center>
 <div class="col-md-12 text-center" style="margin-bottom:50px; margin-top:0px;">
-	<h1 class="font-size-normal color-light">
-	<small class="color-pasific alpha10">Team bi0s</small>
-		Trainings
-	<small class="heading heading-solid center-block"></small>
-	</h1>
+    <h1 class="font-size-normal color-light">
+    <small class="color-pasific alpha10">Team bi0s</small>
+        Trainings
+    <small class="heading heading-solid center-block"></small>
+    </h1>
 </div>
 </center>
 
@@ -111,31 +163,73 @@
 
 <br><br>
 
- 	<!-- footer Area
+
+<!--Search Modal Dialogue Box DELETED-->
+
+ 
+
+<!--Client Area DELETED-->
+ <!-- footer Area
         ===================================== -->
         <div id="footer" class="footer-two pt50 bg-black">
+           
+<!--
+     
+                        <div class="col-md-2 col-sm-3 col-xs-12">
+                            <h6 class="font-montserrat text-uppercase color-dark">Social Media</h6>
+                            
+                        </div>
+
+--> 
+
             <div class="container-fluid pt20">
                 <div class="container">
                     <div class="row">
-			
-			<center>
-			<div class="social social-two">
+            
+            <center>
+            <div class="social social-two">
                                 <a href="https://twitter.com/teambi0s"><i class="fa fa-twitter color-gray"></i></a>
                                 <a href="https://www.facebook.com/teambi0s"><i class="fa fa-facebook color-gray"></i></a>
                                 <a href="https://github.com/teambi0s"><i class="fa fa-github color-gray"></i></a>
-			</div><br>                   
-			<div>
-                            <p><a href="index.html" style="color:white;font-size:1em;">bi0s.in</a></p><br>
+            </div><br>                   
+            <div>
+                            <p><a href="#" style="color:white;font-size:1em;">bi0s.in</a></p>
                         </div>
-			</center>
+            </center>
                     </div><!-- row end -->
                 </div><!-- container end -->
             </div><!-- container-fluid end -->
         </div><!-- footer end -->
+<!--Copyright DELETED-->
 
-</body>
 
-<script src="assets/js/training.js"></script>
+        <!-- JQuery Core
+        =====================================-->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+
+        <!-- Magnific Popup
+        =====================================-->
+        <script src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/magnific-popup/magnific-popup-zoom-gallery.js"></script>
+
+        <!-- Progress Bars
+        =====================================-->
+        <script src="assets/js/progress-bar/bootstrap-progressbar.js"></script>
+        <script src="assets/js/progress-bar/bootstrap-progressbar-main.js"></script>
+
+        <!-- Text Rotator
+        =====================================-->
+        <script src="assets/js/text-rotator/jquery.simple-text-rotator.min.js"></script>
+
+        <!-- Particle JS
+        =====================================-->
+    <script src="assets/js/particle/particles.min.js"></script>
+        <script src="assets/js/particle/particles.main1.js"></script>
+
+        <!-- JQuery Main
+        =====================================-->
+       <script src="assets/js/training.js"></script>
 <script src="assets/js/progress-bar/bootstrap-progressbar.js"></script>
 <script src="assets/js/progress-bar/bootstrap-progressbar-main.js"></script>
 <script src="assets/js/main/jquery.appear.js"></script>
@@ -147,5 +241,5 @@
 <script src="assets/js/main/imagesloaded.pkgd.min.js"></script>
 <script src="assets/js/main/main.js"></script>
 
-</html> 
-
+    </body>
+</html>
